@@ -57,3 +57,13 @@ set laststatus=2  " Always show status line.
 " gvim specific
 set mousehide  " Hide mouse after chars typed
 set mouse=a  " Mouse in all modes
+
+" Bubble Single lines
+nmap <m-up> [e 
+nmap <m-down> ]e
+
+" Bubble mutliple lines
+vmap <m-up> [egv
+vmap <m-down> ]egv
+
+
