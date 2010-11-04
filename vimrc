@@ -16,6 +16,11 @@ noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
+" Ctrl-t
+noremap <c-t> :CommandT<cr>
+vnoremap <c-t> <c-c>:CommandT<cr>
+inoremap <c-t> <c-o>:CommandT<cr>
+
 set lines=50 columns=100
 
 "Backups & Files
