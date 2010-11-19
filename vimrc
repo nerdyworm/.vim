@@ -71,4 +71,5 @@ nmap <m-down> ]e
 vmap <m-up> [egv
 vmap <m-down> ]egv
 
-
+" Nerdtre
+nmap <silent> <C-D> :NERDTreeToggle<CR>
