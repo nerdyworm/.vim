@@ -31,6 +31,12 @@ noremap <c-t> :CommandT<cr>
 vnoremap <c-t> <c-c>:CommandT<cr>
 inoremap <c-t> <c-o>:CommandT<cr>
 
+" VimClojure keybinds
+"autocmd BufRead,BufNewFile *.clj map <c-c> <Plug>ClojureEvalToplevel
+"autocmd BufRead,BufNewFile *.clj map <c-k> <Plug>ClojureEvalFile
+"imap <c-c> <Esc><Plug>ClojureEvalToplevel<Esc>a
+"imap <c-k> <Esc><Plug>ClojureEvalFile<Esc>a
+
 au GUIEnter * set lines=50 columns=100
 
 "Backups & Files
@@ -102,3 +108,5 @@ set guioptions-=b
 " Settings for VimClojure
 let vimclojure#HighlightBuiltins = 1
 let vimclojure#ParenRainbow = 1
+"let vimclojure#WantNailgun = 1
+"let vimclojure#NailgunClient = '/home/benjamin/bin/ng'
