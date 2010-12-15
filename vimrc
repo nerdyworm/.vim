@@ -6,9 +6,17 @@ set nocompatible  " We don't want vi compatibility.
 
 set background=dark 
 syntax on 
-colorscheme nerdyworm 
+" colorscheme nerdyworm 
+colorscheme nerdyworm
 
 filetype plugin indent on  
+
+" change the mapleader from \ to ,
+let mapleader=","
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Ctrl-s save
 " Use CTRL-S for saving, also in Insert mode
@@ -21,7 +29,7 @@ noremap <c-t> :CommandT<cr>
 vnoremap <c-t> <c-c>:CommandT<cr>
 inoremap <c-t> <c-o>:CommandT<cr>
 
-set lines=50 columns=100
+au GUIEnter * set lines=50 columns=100
 
 "Backups & Files
 set backup                     " Enable creation of backup file.
@@ -73,3 +81,12 @@ vmap <m-down> ]egv
 
 " Nerdtre
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+
+au BufRead,BufNewFile *.less set ft=less syntax=less
+
+"set guifont=Monaco
+set guifont=*
+set guifont=Inconsolata\ 12
+
+" Remove all gui options 
+" set guioptions=

@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/benjamin/Documents/Workspace/parallel_programing/project_5'
-let g:netrw_dirhist_2='/home/benjamin/Documents/Workspace/sandbox/rails/datamapper_test'
-let g:netrw_dirhist_3='/home/benjamin/Documents/Workspace/illbeout.com'
-let g:netrw_dirhist_4='/home/benjamin/Documents/Workspace/compilers'
-let g:netrw_dirhist_5='/home/benjamin/Documents/Workspace/foto'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/benjamin/Documents/Workspace/illbeout.com'
+let g:netrw_dirhist_2='/home/benjamin/Documents/Workspace/coderloop/missile'
+let g:netrw_dirhist_3='/home/benjamin'
+let g:netrw_dirhist_4='/home/benjamin/Documents/Workspace/illbeout.com'
+let g:netrw_dirhist_5='/home/benjamin/.emacs.d/site-list/rhtml'
+let g:netrw_dirhist_6='/home/benjamin/Documents/Workspace/illbeout.com'
+let g:netrw_dirhist_7='/home/benjamin/Documents/Workspace/illbeout.com.old'
+let g:netrw_dirhist_8='/home/benjamin/Documents/Workspace/Clojure/Book'
+let g:netrw_dirhist_9='/home/benjamin/Documents/Workspace/illbeout.com'
