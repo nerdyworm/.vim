@@ -6,8 +6,10 @@ set nocompatible  " We don't want vi compatibility.
 
 set background=dark 
 syntax on 
-" colorscheme nerdyworm 
-colorscheme nerdyworm
+
+" colorscheme wombat
+" colorscheme nerdyworm
+colorscheme herald
 
 filetype plugin indent on  
 
@@ -90,3 +92,13 @@ set guifont=Inconsolata\ 12
 
 " Remove all gui options 
 " set guioptions=
+set guioptions-=T
+set guioptions-=L
+set guioptions-=l
+set guioptions-=R
+set guioptions-=r
+set guioptions-=b
+
+" Settings for VimClojure
+let vimclojure#HighlightBuiltins = 1
+let vimclojure#ParenRainbow = 1
