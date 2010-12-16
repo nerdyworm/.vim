@@ -26,6 +26,11 @@ noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
+" Ctrl-V paste, Ctrl-C copy
+map <C-V> "+gP
+cmap <C-V> <C-R>+
+vnoremap <C-C> "+y
+
 " Ctrl-t
 noremap <c-t> :CommandT<cr>
 vnoremap <c-t> <c-c>:CommandT<cr>
