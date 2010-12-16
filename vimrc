@@ -109,6 +109,7 @@ set guioptions-=l
 set guioptions-=R
 set guioptions-=r
 set guioptions-=b
+set guioptions-=m
 
 " Settings for VimClojure
 let vimclojure#HighlightBuiltins = 1
