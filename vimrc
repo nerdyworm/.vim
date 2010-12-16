@@ -9,7 +9,8 @@ syntax on
 
 " colorscheme wombat
 " colorscheme nerdyworm
-colorscheme herald
+" colorscheme herald
+colorscheme herald-nerdyworm
 
 filetype plugin indent on  
 
@@ -32,10 +33,10 @@ vnoremap <c-t> <c-c>:CommandT<cr>
 inoremap <c-t> <c-o>:CommandT<cr>
 
 " VimClojure keybinds
-"autocmd BufRead,BufNewFile *.clj map <c-c> <Plug>ClojureEvalToplevel
-"autocmd BufRead,BufNewFile *.clj map <c-k> <Plug>ClojureEvalFile
-"imap <c-c> <Esc><Plug>ClojureEvalToplevel<Esc>a
-"imap <c-k> <Esc><Plug>ClojureEvalFile<Esc>a
+autocmd BufRead,BufNewFile *.clj map <C-c><C-c> <Plug>ClojureEvalToplevel
+autocmd BufRead,BufNewFile *.clj map <C-c><C-k> <Plug>ClojureEvalFile
+imap <C-c><C-c> <Esc><Plug>ClojureEvalToplevel<Esc>a
+imap <C-c><C-k> <Esc><Plug>ClojureEvalFile<Esc>a
 
 au GUIEnter * set lines=50 columns=100
 
@@ -91,8 +92,8 @@ nmap <silent> <C-D> :NERDTreeToggle<CR>
 
 au BufRead,BufNewFile *.less set ft=less syntax=less
 
-"set guifont=Monaco
-set guifont=*
+" set guifont=Monaco
+" set guifont=*
 set guifont=Inconsolata\ 12
 
 " Remove all gui options 
@@ -107,5 +108,5 @@ set guioptions-=b
 " Settings for VimClojure
 let vimclojure#HighlightBuiltins = 1
 let vimclojure#ParenRainbow = 1
-"let vimclojure#WantNailgun = 1
+let vimclojure#WantNailgun = 1
 "let vimclojure#NailgunClient = '/home/benjamin/bin/ng'
