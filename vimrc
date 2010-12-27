@@ -10,7 +10,8 @@ syntax on
 " colorscheme wombat
 " colorscheme nerdyworm
 " colorscheme herald
-colorscheme herald-nerdyworm
+" colorscheme herald-nerdyworm
+colorscheme summerfruit256
 
 filetype plugin indent on  
 
@@ -58,7 +59,6 @@ set ruler  " Ruler on
 set nu  " Line numbers on
 set nowrap  " Line wrapping off
 set timeoutlen=250  " Time to wait after ESC (default causes an annoying delay)
-" colorscheme vividchalk  " Uncomment this to set a default theme
  
 " Formatting (some of these are for coding in C and C++)
 set ts=2  " Tabs are 2 spaces
@@ -97,9 +97,9 @@ nmap <silent> <C-D> :NERDTreeToggle<CR>
 
 au BufRead,BufNewFile *.less set ft=less syntax=less
 
-" set guifont=Monaco
+set guifont=Monaco:h12
 " set guifont=*
-set guifont=Inconsolata\ 12
+" set guifont=Inconsolata\ 12
 
 " Remove all gui options 
 " set guioptions=
@@ -116,3 +116,6 @@ let vimclojure#HighlightBuiltins = 1
 let vimclojure#ParenRainbow = 1
 let vimclojure#WantNailgun = 1
 "let vimclojure#NailgunClient = '/home/benjamin/bin/ng'
+"
+" coffee script bundle
+" let coffee_compile_on_save = 1
