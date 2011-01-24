@@ -10,8 +10,8 @@ syntax on
 " colorscheme wombat
 " colorscheme nerdyworm
 " colorscheme herald
-" colorscheme herald-nerdyworm
-colorscheme summerfruit256
+colorscheme herald-nerdyworm
+" colorscheme summerfruit256
 
 filetype plugin indent on  
 
@@ -97,8 +97,8 @@ nmap <silent> <C-D> :NERDTreeToggle<CR>
 
 au BufRead,BufNewFile *.less set ft=less syntax=less
 
-set guifont=Monaco:h12
-" set guifont=*
+set guifont=*
+set guifont=Monaco
 " set guifont=Inconsolata\ 12
 
 " Remove all gui options 
