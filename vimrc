@@ -1,19 +1,18 @@
+filetype off
 call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+"call pathogen#helptags()
 
-filetype on  " Automatically detect file types.
+syntax enable 
+filetype plugin indent on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
 
 set background=dark 
-syntax on 
-
 " colorscheme wombat
 " colorscheme nerdyworm
 " colorscheme herald
-colorscheme herald-nerdyworm
+" colorscheme herald-nerdyworm
 " colorscheme summerfruit256
-
-filetype plugin indent on  
+colorscheme jellybeans+
 
 " change the mapleader from \ to ,
 let mapleader=","
@@ -37,6 +36,12 @@ vnoremap <C-C> "+y
 noremap <c-t> :CommandT<cr>
 vnoremap <c-t> <c-c>:CommandT<cr>
 inoremap <c-t> <c-o>:CommandT<cr>
+
+ " Use ctrl + movement keys to move around windows
+map <C-H> <C-W>h
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
 
 " VimClojure keybinds
 autocmd BufRead,BufNewFile *.clj map <C-c><C-c> <Plug>ClojureEvalToplevel
@@ -95,20 +100,20 @@ vmap <m-down> ]egv
 " Nerdtre
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
-au BufRead,BufNewFile *.less set ft=less syntax=less
+"au BufRead,BufNewFile *.less set ft=less syntax=less
 
 set guifont=*
-set guifont=Monaco
-" set guifont=Inconsolata\ 12
+" set guifont=Monaco
+set guifont=Inconsolata\ 12
 
 " Remove all gui options 
 " set guioptions=
 set guioptions-=T
 set guioptions-=L
-set guioptions-=l
-set guioptions-=R
-set guioptions-=r
-set guioptions-=b
+"set guioptions-=l
+"set guioptions-=R
+"set guioptions-=r
+"set guioptions-=b
 set guioptions-=m
 
 " Settings for VimClojure
@@ -118,4 +123,9 @@ let vimclojure#WantNailgun = 1
 "let vimclojure#NailgunClient = '/home/benjamin/bin/ng'
 "
 " coffee script bundle
-" let coffee_compile_on_save = 1
+let coffee_compile_on_save = 1
+"autocmd BufNewFile,BufRead *.coffee set filetype=coffee
+"autocmd BufNewFile,BufRead *Cakefile set filetype=coffee
+
+au! BufRead,BufNewFile *.markdown   setfiletype mkd
+autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
